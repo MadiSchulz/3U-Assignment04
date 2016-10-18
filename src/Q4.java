@@ -14,5 +14,9 @@ public class Q4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        // Round up = math.ceil
+        // Round down = math.floor
+        
     }
 }
