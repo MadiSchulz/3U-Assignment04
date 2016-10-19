@@ -16,13 +16,15 @@ public class Q1 {
      */
     public static void main(String[] args) {
 
-        // Create scanner for input
+        // Create scanner for user input
         Scanner input = new Scanner(System.in);
 
         // Ask user for name
         System.out.println("Please enter your name:");
+        
         // Get name
         String name = input.nextLine();
+        
         // Greet user
         System.out.println("Hello " + name + ". " + "How are you today?");
     }
