@@ -30,76 +30,76 @@ public class Q5 {
         // Ask for total marks on first test
         System.out.println("What was the first test out of?:");
         // Variable to store total marks on first test
-        int firstTotal = input.nextInt();
+        double firstTotal = input.nextDouble();
         // Ask for user's mark on first test
         System.out.println("What mark did you get?:");
         // Variable to store user's mark on first test
-        int firstMark = input.nextInt();
+        double firstMark = input.nextDouble();
         
         // Variable to store first percentage
-        int perFirst = firstMark / firstTotal;
+        double perFirst = (firstMark / firstTotal) * 100;
         
         
         // Ask for total marks on second test
         System.out.println("What was the second test out of?:");
         // Variable to store total marks on second test
-        int secondTotal = input.nextInt();
+        double secondTotal = input.nextDouble();
         // Ask for user's mark on second test
         System.out.println("What mark did you get?:");
         // Variable to store user's mark on second test
-        int secondMark = input.nextInt();
+        double secondMark = input.nextDouble();
         
         // Variable to store second percentage
-        int perSecond = secondMark / secondTotal;
+        double perSecond = (secondMark / secondTotal) * 100;
         
         // Ask for total marks on third test
         System.out.println("What was the third test out of?:");
         // Variable to store total marks on third test
-        int thirdTotal = input.nextInt();
+        double thirdTotal = input.nextDouble();
         // Ask for user's mark on third test
         System.out.println("What mark did you get?:");
         // Variable to store user's mark on third test
-        int thirdMark = input.nextInt();
+        double thirdMark = input.nextDouble();
         
         // Variable to store third percentage
-        int perThird = thirdMark / thirdTotal;
+        double perThird = (thirdMark / thirdTotal) * 100;
         
         // Ask for total marks on fourth test
         System.out.println("What was the fourth test out of?:");
         // Variable to store total marks on fourth test
-        int fourthTotal = input.nextInt();
+        double fourthTotal = input.nextDouble();
         // Ask for user's mark on fourth test
         System.out.println("What mark did you get?:");
         // Variable to store user's mark on fourth test
-        int fourthMark = input.nextInt();
+        double fourthMark = input.nextDouble();
         
         // Variable to store fourth percentage
-        int perFourth = fourthMark / fourthTotal;
+        double perFourth = (fourthMark / fourthTotal) * 100;
         
         // Ask for total marks on fifth test
         System.out.println("What was the fifth test out of?:");
         // Variable to store total marks on fifth test
-        int fifthTotal = input.nextInt();
+        double fifthTotal = input.nextDouble();
         // Ask for user's mark on fifth test
         System.out.println("What mark did you get?:");
         // Variable to store user's mark on fifth test
-        int fifthMark = input.nextInt();
+        double fifthMark = input.nextDouble();
         
         // Variable to store first percentage
-        int perFifth = fifthMark / fifthTotal;
+        double perFifth = (fifthMark / fifthTotal) * 100;
         
         // OUTPUT TEST SCORES
         System.out.println("Test scores for " + name + ":");
-        System.out.println("Test 1:" + perFirst + "%");
-        System.out.println("Test 2:" + perSecond + "%");
-        System.out.println("Test 3:" + perThird + "%");
-        System.out.println("Test 4:" + perFourth + "%");
-        System.out.println("Test 5:" + perFifth + "%");
+        System.out.println("Test 1: " + perFirst + "%");
+        System.out.println("Test 2: " + perSecond + "%");
+        System.out.println("Test 3: " + perThird + "%");
+        System.out.println("Test 4: " + perFourth + "%");
+        System.out.println("Test 5: " + perFifth + "%");
         
         // Create variable for average test percentage
-        int average = (firstMark + secondMark + thirdMark + fourthMark + fifthMark)/(firstTotal + secondTotal + thirdTotal + fourthTotal + fifthTotal);
+        double average = ((firstMark + secondMark + thirdMark + fourthMark + fifthMark)/(firstTotal + secondTotal + thirdTotal + fourthTotal + fifthTotal)) * 100;
         // Output average test score
-        System.out.println("Average:" + average + "%");
+        System.out.println(name + "'s " + "average: " + average + "%");
         
     }
 }
