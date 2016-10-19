@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -13,6 +16,17 @@ public class Q7 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        // Create scanner for user input
+        Scanner input = new Scanner(System.in);
+        
+        // GET DRIVER'S INPUT
+        // Get speed limit
+        // Get recorded speed of car
+        
+        // GIVE DRIVER THEIR OUTPUT
+        // Driver not speeding
+        // Driver speeding
+            // 
     }
 }
