@@ -58,6 +58,5 @@ public class Q4 {
 
         // Tell user the total cost & the number of tickets
         System.out.println("The total cost is $" + total + ". " + "You will need to sell " + tickets + " tickets to break even.");
-
     }
 }
