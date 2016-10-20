@@ -21,10 +21,10 @@ public class Q1 {
 
         // Ask user for name
         System.out.println("Please enter your name:");
-        
+
         // Get name
         String name = input.nextLine();
-        
+
         // Greet user
         System.out.println("Hello " + name + ". " + "How are you today?");
     }

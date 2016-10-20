@@ -25,15 +25,17 @@ public class Q3 {
         // GATHER USER INPUT:
         // Get first number
         double first = input.nextDouble();
+
         // Get second number
         double second = input.nextDouble();
+
         // Get third number
         double third = input.nextDouble();
+
         // Get fourth number
         double fourth = input.nextDouble();
 
         // Tell user their numbers
         System.out.println("Your numbers were " + first + ", " + second + ", " + third + ", and " + fourth + ".");
-
     }
 }

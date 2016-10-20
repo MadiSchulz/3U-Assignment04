@@ -90,10 +90,15 @@ public class Q5 {
         
         // OUTPUT TEST SCORES
         System.out.println("Test scores for " + name + ":");
+        // First test
         System.out.println("Test 1: " + perFirst + "%");
+        // Second test
         System.out.println("Test 2: " + perSecond + "%");
+        // Third test
         System.out.println("Test 3: " + perThird + "%");
+        // Fourth test
         System.out.println("Test 4: " + perFourth + "%");
+        // Fifth test
         System.out.println("Test 5: " + perFifth + "%");
         
         // Create variable for average test percentage

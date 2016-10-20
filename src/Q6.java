@@ -20,7 +20,6 @@ public class Q6 {
         Scanner input = new Scanner(System.in);
 
         // GATHER USAGE PATTERN
-
         // Ask user for number of daytime minutes
         System.out.println("Number of daytime minutes:");
         // Variable to store daytime minutes
@@ -37,9 +36,9 @@ public class Q6 {
         double endMin = input.nextDouble();
 
         // CALCULATE PLAN COSTS FOR USAGE PATTERN
-
         // Calculate dayMin for Plan A (100 free then 0.25 per minute)
         double dayMinA = dayMin - 100;
+        // If it is a negative integer, then set it to 0
         if (dayMinA < 0) {
             dayMinA = 0;
         }
@@ -51,6 +50,7 @@ public class Q6 {
 
         // Calculate dayMin for Plan B (250 free then 0.45 per minute)
         double dayMinB = dayMin - 250;
+        // If it is a negative integer, then set it to 0
         if (dayMinB < 0) {
             dayMinB = 0;
         }
@@ -61,7 +61,6 @@ public class Q6 {
         System.out.println("Plan B costs " + costB);
 
         // CHOOSE CHEAPEST PLAN
-
         // If Plan A is cheaper
         if (costA < costB) {
             // Output to user
