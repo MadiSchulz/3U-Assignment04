@@ -40,19 +40,23 @@ public class Q6 {
 
         // Calculate dayMin for Plan A (100 free then 0.25 per minute)
         double dayMinA = dayMin - 100;
+        if (dayMinA < 0) {
+            dayMinA = 0;
+        }
 
         // Variable to store cost of Plan A
-        double costA = (dayMinA * 0.25);
-        // ) + (evenMin * 0.15) + (endMin * 0.20
+        double costA = (dayMinA * 0.25) + (evenMin * 0.15) + (endMin * 0.20);
         // Output cost of Plan A
         System.out.println("Plan A costs " + costA);
 
         // Calculate dayMin for Plan B (250 free then 0.45 per minute)
         double dayMinB = dayMin - 250;
+        if (dayMinB < 0) {
+            dayMinB = 0;
+        }
 
         // Variable to store cost of Plan B
-        double costB = (dayMinB * 0.45);
-        // ) + (evenMin * 0.35) + (endMin * 0.25
+        double costB = (dayMinB * 0.45) + (evenMin * 0.35) + (endMin * 0.25);
         // Output cost of Plan B
         System.out.println("Plan B costs " + costB);
 
@@ -67,7 +71,7 @@ public class Q6 {
         // If Plan B is cheaper
         if (costA > costB) {
             // Output to user
-            System.out.println("Plan B is cheapest");
+            System.out.println("Plan B is cheapest.");
         }
 
         // If both plans are the same cost
