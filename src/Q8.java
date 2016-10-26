@@ -16,45 +16,42 @@ public class Q8 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
-        // Create scanner for input
+        
+        // Create scanner for Player's input
         Scanner input = new Scanner(System.in);
         
-        // CREATE GAME VARIABLES
-        // Variable to store sum of dice ( >=2 && <=12)
-        int sumDice;
-        // If 0, terminate program
-        // If not >=2 && <=12, do not move
-        // If >=2 && <=12, then move
+        // Greet Player for new game
+        System.out.println("Welcome, Player!");
+        
+        // Variable to store number of squares moved, starting at square 1
+        int squaresMoved = 1;
+        
+        
+        // WHILE LOOP FOR A SINGLE TURN
+        // Keep playing while the total number of squares moved is less than 100
+        while(squaresMoved <=99){
+        // Ask Player for the sum of the dice
+        System.out.println("Enter sum of dice:");
+        // Variable to store sum of pair of dice
+        int sumDice = input.nextInt();
+            // Sum of dice is a value between 2 and 12
+            if(sumDice >=2 && sumDice <=12){
+                
+                // Add the sum of the dice to the number of squares moved
+                // CHECK IF ON ANY SPECIAL SQUARES (SNAKES OR LADDERS)
+                // Square 9 (first ladder)
 
-        // Variable to store first ladder
-        int ladderOne;
-        // 9 to 34, add 25 to squaresMoved
-        // if squaresMoved = 9
-            // int squaresMoved = squaresMoved + 25
+            }
+                
+                    // If ladder or snake
+                        // Move extra, break loop
+                    // If finish
+                        // Player wins
+                    // break turn
+                // 
+            // No value (0)
+                // Player quits
         
-        // Variable to store second ladder
-        int ladderTwo;
-        // 
-        // if squaresMoved = 
-        
-        // Variable to store third ladder
-        int ladderThree;
-        //
-        
-        // Variable to store first snake
-        int snakeOne;
-        
-        // Variable to store second snake
-        int snakeTwo;
-        
-        // Variable to store third snake
-        int snakeThree;
-        
-        // Variable to store total number of squares moved by the player
-        int squaresMoved;
-        // Start game with int squaresMoved = 1;
-        
-        // For every move, add sumDice to squaresMoved
+        }   
     }
 }
