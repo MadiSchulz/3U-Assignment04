@@ -25,27 +25,37 @@ public class Q9 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        name = new javax.swing.JTextField();
+        userName = new javax.swing.JTextField();
         buttonName = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        greetName = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        name.setText("Name");
-        name.addActionListener(new java.awt.event.ActionListener() {
+        userName.setText("Your name here...");
+        userName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nameActionPerformed(evt);
+                userNameActionPerformed(evt);
             }
         });
 
         buttonName.setText("Say Hello");
+        buttonName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         buttonName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonNameActionPerformed(evt);
             }
         });
 
-        jLabel1.setText("Hello");
+        greetName.setEditable(false);
+        greetName.setBackground(new java.awt.Color(240, 240, 240));
+        greetName.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
+        greetName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        greetName.setBorder(null);
+        greetName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                greetNameActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -54,37 +64,44 @@ public class Q9 extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(149, 149, 149)
+                        .addGap(148, 148, 148)
                         .addComponent(buttonName, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(50, 50, 50)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(name)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(userName, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                            .addComponent(greetName))))
                 .addContainerGap(50, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(57, 57, 57)
-                .addComponent(name, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60)
-                .addComponent(jLabel1)
-                .addGap(30, 30, 30)
-                .addComponent(buttonName)
-                .addContainerGap(96, Short.MAX_VALUE))
+                .addComponent(userName, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(greetName, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(buttonName, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(69, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void nameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nameActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nameActionPerformed
+    private void userNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userNameActionPerformed
+    }//GEN-LAST:event_userNameActionPerformed
 
     private void buttonNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonNameActionPerformed
-        // TODO add your handling code here:
+        
+        // Get user's name from the input box
+        String sayName = userName.getText();
+
+        // Greet the user from the output box
+        greetName.setText("Hello, " + sayName + ".");
     }//GEN-LAST:event_buttonNameActionPerformed
+
+    private void greetNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_greetNameActionPerformed
+    }//GEN-LAST:event_greetNameActionPerformed
 
     /**
      * @param args the command line arguments
@@ -122,7 +139,7 @@ public class Q9 extends javax.swing.JFrame {
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton buttonName;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JTextField name;
+    private javax.swing.JTextField greetName;
+    private javax.swing.JTextField userName;
     // End of variables declaration//GEN-END:variables
 }
