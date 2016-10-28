@@ -31,6 +31,7 @@ public class Q9 extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        userName.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
         userName.setText("Your name here...");
         userName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -38,8 +39,9 @@ public class Q9 extends javax.swing.JFrame {
             }
         });
 
+        buttonName.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         buttonName.setText("Say Hello");
-        buttonName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        buttonName.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         buttonName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonNameActionPerformed(evt);
@@ -47,7 +49,6 @@ public class Q9 extends javax.swing.JFrame {
         });
 
         greetName.setEditable(false);
-        greetName.setBackground(new java.awt.Color(240, 240, 240));
         greetName.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         greetName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         greetName.setBorder(null);
