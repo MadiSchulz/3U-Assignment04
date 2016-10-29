@@ -30,6 +30,7 @@ public class Q9 extends javax.swing.JFrame {
         greetName = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
 
         userName.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
         userName.setText("Your name here...");
