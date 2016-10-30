@@ -36,7 +36,7 @@ public class Q8 {
                 // End game
                 break;
 
-            // Else if the sum is between 2 and 12
+                // Else if the sum is between 2 and 12
             } else if (sumDice >= 2 && sumDice <= 12) {
                 // Add the sum of the dice to the total squares moved to get Player's current square
                 currentSquare = sumDice + currentSquare;
