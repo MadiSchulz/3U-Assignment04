@@ -42,7 +42,7 @@ public class Q9 extends javax.swing.JFrame {
 
         buttonName.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         buttonName.setText("Say Hello");
-        buttonName.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        buttonName.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         buttonName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonNameActionPerformed(evt);
@@ -53,6 +53,7 @@ public class Q9 extends javax.swing.JFrame {
         greetName.setFont(new java.awt.Font("Consolas", 1, 12)); // NOI18N
         greetName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         greetName.setBorder(null);
+        greetName.setCaretColor(new java.awt.Color(240, 240, 240));
         greetName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 greetNameActionPerformed(evt);
@@ -94,7 +95,7 @@ public class Q9 extends javax.swing.JFrame {
     }//GEN-LAST:event_userNameActionPerformed
 
     private void buttonNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonNameActionPerformed
-        
+
         // Get user's name from the input box
         String sayName = userName.getText();
 

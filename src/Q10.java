@@ -1,13 +1,14 @@
 /*
- * To change this template, choose Tools | Templates
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 
 /**
  *
- * @author schum0689
+ * @author madis
  */
-public class Q10 extends javax.swing.JPanel {
+public class Q10 extends javax.swing.JFrame {
 
     /**
      * Creates new form Q10
@@ -25,17 +26,255 @@ public class Q10 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
+        firstLabel = new javax.swing.JLabel();
+        secondLabel = new javax.swing.JLabel();
+        resultLabel = new javax.swing.JLabel();
+        subButton = new javax.swing.JButton();
+        addButton = new javax.swing.JButton();
+        multButton = new javax.swing.JButton();
+        divButton = new javax.swing.JButton();
+        firstInput = new javax.swing.JTextField();
+        secondInput = new javax.swing.JTextField();
+        resultNum = new javax.swing.JTextField();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        firstLabel.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        firstLabel.setText("First Number ");
+
+        secondLabel.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        secondLabel.setText("Second Number");
+
+        resultLabel.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        resultLabel.setText("Result");
+
+        subButton.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
+        subButton.setText("-");
+        subButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                subButtonActionPerformed(evt);
+            }
+        });
+
+        addButton.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
+        addButton.setText("+");
+        addButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addButtonActionPerformed(evt);
+            }
+        });
+
+        multButton.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
+        multButton.setText("x");
+        multButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                multButtonActionPerformed(evt);
+            }
+        });
+
+        divButton.setFont(new java.awt.Font("Consolas", 0, 14)); // NOI18N
+        divButton.setText("/");
+        divButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                divButtonActionPerformed(evt);
+            }
+        });
+
+        firstInput.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        firstInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                firstInputActionPerformed(evt);
+            }
+        });
+
+        secondInput.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        secondInput.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                secondInputActionPerformed(evt);
+            }
+        });
+
+        resultNum.setEditable(false);
+        resultNum.setFont(new java.awt.Font("Consolas", 0, 12)); // NOI18N
+        resultNum.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                resultNumActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(addButton, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(subButton, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(multButton, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(divButton, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(resultLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(resultNum))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(secondLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(secondInput))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(firstLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(firstInput, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(46, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(23, 23, 23)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(firstInput)
+                    .addComponent(firstLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(secondLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(secondInput, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(resultLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(resultNum, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(subButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(addButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(multButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(divButton, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(34, Short.MAX_VALUE))
         );
+
+        pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void subButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_subButtonActionPerformed
+
+        // Get first number
+        int numOne = Integer.parseInt(firstInput.getText());
+        // Get second number
+        int numTwo = Integer.parseInt(secondInput.getText());
+
+        // Subtract numbers
+        int subNum = numOne - numTwo;
+
+        // Convert to string and show user the answer
+        resultNum.setText(Integer.toString(subNum));
+
+    }//GEN-LAST:event_subButtonActionPerformed
+
+    private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
+
+        // Get first number
+        int numOne = Integer.parseInt(firstInput.getText());
+        // Get second number
+        int numTwo = Integer.parseInt(secondInput.getText());
+
+        // Add numbers
+        int addNum = numOne + numTwo;
+
+        // Convert to string and show user the answer
+        resultNum.setText(Integer.toString(addNum));
+
+    }//GEN-LAST:event_addButtonActionPerformed
+
+    private void multButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_multButtonActionPerformed
+
+        // Get first number
+        int numOne = Integer.parseInt(firstInput.getText());
+        // Get second number
+        int numTwo = Integer.parseInt(secondInput.getText());
+
+        // Multiply numbers
+        int multNum = numOne * numTwo;
+
+        // Convert to string and show user the answer
+        resultNum.setText(Integer.toString(multNum));
+
+    }//GEN-LAST:event_multButtonActionPerformed
+
+    private void divButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_divButtonActionPerformed
+
+        // Get first number
+        int numOne = Integer.parseInt(firstInput.getText());
+        // Get second number
+        int numTwo = Integer.parseInt(secondInput.getText());
+
+        // Divide numbers
+        int divNum = numOne / numTwo;
+
+        // Convert to string and show user the answer
+        resultNum.setText(Integer.toString(divNum));
+
+    }//GEN-LAST:event_divButtonActionPerformed
+
+    private void firstInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_firstInputActionPerformed
+
+    }//GEN-LAST:event_firstInputActionPerformed
+
+    private void secondInputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_secondInputActionPerformed
+
+    }//GEN-LAST:event_secondInputActionPerformed
+
+    private void resultNumActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_resultNumActionPerformed
+
+    }//GEN-LAST:event_resultNumActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introfirstLabeln Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Q10.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Q10.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Q10.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Q10.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Q10().setVisible(true);
+            }
+        });
+    }
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton addButton;
+    private javax.swing.JButton divButton;
+    private javax.swing.JTextField firstInput;
+    private javax.swing.JLabel firstLabel;
+    private javax.swing.JButton multButton;
+    private javax.swing.JLabel resultLabel;
+    private javax.swing.JTextField resultNum;
+    private javax.swing.JTextField secondInput;
+    private javax.swing.JLabel secondLabel;
+    private javax.swing.JButton subButton;
     // End of variables declaration//GEN-END:variables
 }
