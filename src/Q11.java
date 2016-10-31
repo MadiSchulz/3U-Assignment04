@@ -143,7 +143,7 @@ public class Q11 extends javax.swing.JFrame {
         double degreesC = Double.parseDouble(boxC.getText());
 
         // F is equal to C times 9/5 plus 32
-        double degreesF = degreesC * (9 / 5) + 32;
+        double degreesF = (degreesC * 1.8) + 32;
 
         // Convert to string and output degrees Farenheit
         boxF.setText(Double.toString(degreesF));
